@@ -42,4 +42,4 @@ jobs:
     - name: Push to Docker Hub
       run: |
         docker tag calculator-app ${{ secrets.DOCKERHUB_USERNAME }}/calculator-app
-        docker push ${{ secrets.DOCKERHUB_USERNAME }}/calculator-app
+        docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-calculator-app

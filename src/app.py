@@ -20,6 +20,9 @@ class Calculator:
         if b == 0:
             raise ValueError("Cannot divide by zero")
         return a / b
+@app.route('/')
+def home():
+    return "Welcome to the Calculator API!"
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
